@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+        <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAmlaUaP4jvXmFnRa8nyHLAcXkiPjaLLZg"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harpianet</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <div class="logo">
+      <a href="/">
+        <!-- <img src="/images/kasterweb-logo.png" alt="Kasterweb" width="220"> -->
+      </a>
+    </div>
+
+    <div id="map" class="map"></div>
+
+    <div id="map-nav" class="nav">
+      <button type="button" class="nav-toggler">
+        <i class="nav-toggler-icon fa"></i>
+      </button>
+      <div class="nav-content">
+        <h1 class="nav-title">
+          <i class="fa fa-bars"></i>
+          Categorias
+        </h1>
+        <ul id="map-nav-menu" class="nav-menu">
+          <li class="nav-menu-item">
+            <label>
+              <span class="nav-menu-item-marker"></span>
+              <input type="checkbox" class="map-nav-kind" data-kind-id="agent" data-kind-color="#002a66" data-kind-icon="blue">
+              Agentes
+            </label>
+          </li>
+          <li class="nav-menu-item">
+            <label>
+              <span class="nav-menu-item-marker"></span>
+              <input type="checkbox" class="map-nav-kind" data-kind-id="resource" data-kind-color="#ff9d4c" data-kind-icon="orange">
+              Recursos
+            </label>
+          </li>
+          <li class="nav-menu-item">
+            <label>
+              <span class="nav-menu-item-marker"></span>
+              <input type="checkbox" class="map-nav-kind" data-kind-id="ocurrence" data-kind-color="#b13000" data-kind-icon="red">
+              Ocorrências
+            </label>
+          </li>
+          <li class="nav-menu-item">
+            <label>
+              <span class="nav-menu-item-marker"></span>
+              <input type="checkbox" class="map-nav-kind" data-kind-id="area_of_risks" data-kind-color="#fbdb63" data-kind-icon="yellow">
+              Áreas de Riscos
+            </label>
+          </li>
+          <li class="nav-menu-item">
+            <label>
+              <span class="nav-menu-item-marker"></span>
+              <input type="checkbox" class="map-nav-kind" data-kind-id="partners" data-kind-color="#cadfaa" data-kind-icon="green">
+              Parceiros
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+  </body>
+</html>

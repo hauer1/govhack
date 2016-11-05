@@ -1,0 +1,17 @@
+[
+  {
+    "id": "agent",
+    "name": "Agente",
+    "color": "002a66"
+  },
+  {
+    "id": "resource",
+    "name": "Recurso",
+    "color": "ff9d4c"
+  },
+  {
+    "id": "ocurrence",
+    "name": "Ocorrência",
+    "color": "b13000"
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "kind": "agent",
+    "name": "João da Silva",
+    "phone": "(01) 2345-6789",
+    "email": "joao@mt.gov.br",
+    "location": {
+      "lat": "-15.616805",
+      "lng": "-56.078113"
+    }
+  },
+  {
+    "kind": "agent",
+    "name": "Maria Aparecida",
+    "phone": "(01) 2345-6789",
+    "email": "maria@mt.gov.br",
+    "location": {
+      "lat": "-15.5754808",
+      "lng": "-56.10837"
+    }
+  },
+  {
+    "kind": "agent",
+    "name": "Fulano",
+    "phone": "(01) 2345-6789",
+    "email": "fulano@mt.gov.br",
+    "location": {
+      "lat": "-15.650335",
+      "lng": "-56.129809"
+    }
+  },
+  {
+    "kind": "resource",
+    "name": "X Guinchos",
+    "phone": "(01) 2345-6789",
+    "email": "x.guinchos@hotmail.com",
+    "location": {
+      "lat": "-15.655593",
+      "lng": "-56.103628"
+    }
+  },
+  {
+    "kind": "resource",
+    "name": "Prefeitura de Cuiabá",
+    "phone": "(01) 2345-6789",
+    "email": "contato@cuiaba.mt.gov.br",
+    "location": {
+      "lat": "-15.6056782",
+      "lng": "-56.0834083"
+    }
+  },
+  {
+    "kind": "resource",
+    "name": "Empreiteira X",
+    "phone": "(01) 2345-6789",
+    "email": "contato@empreiteirax.com.br",
+    "location": {
+      "lat": "-15.574423",
+      "lng": "-56.073260"
+    }
+  },
+  {
+    "kind": "ocurrence",
+    "name": "Deslizamento",
+    "description": "Ocorreu o deslizamento do barranco devido à condições postas pela forte chuva.",
+    "location": {
+      "lat": "-15.622455",
+      "lng": "-56.098561"
+    },
+    "created_at": "2015-12-01"
+  }
+]

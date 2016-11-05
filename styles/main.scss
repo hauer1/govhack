@@ -1,0 +1,134 @@
+// bower:scss
+// endbower
+
+$base-color: #fff !default;
+$primary-color: #00a9a4 !default;
+$contrast-color: #000 !default;
+
+$font-family: sans-serif, "Open Sans" !default;
+
+$nav-max-width: 60px !default;
+$nav-bg: $base-color !default;
+$nav-box-shadow: 0 0 9px rgba(60,60,60,.5) !default;
+$nav-transition-duration: 300ms !default;
+$nav-toggler-size: 80px !default;
+$nav-toggler-hover-box-shadow: 0 0 9px rgba(60,60,60,.75) !default;
+$nav-opened-max-width: 250px !default;
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 100;
+}
+
+.map {
+  height: 100%;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  max-width: $nav-max-width;
+  height: 100%;
+  background: $nav-bg;
+  box-shadow: $nav-box-shadow;
+
+  &,
+  * {
+    transition-duration: $nav-transition-duration;
+  }
+
+  .nav-content {
+    opacity: 0;
+    transition-duration: 100ms;
+  }
+
+  .nav-toggler {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 100;
+    width: $nav-toggler-size;
+    height: $nav-toggler-size;
+    color: $base-color;
+    background-color: $primary-color;
+    border: 10px solid $base-color;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transform: translateX(-50%);
+
+    &:hover {
+      background-color: lighten($primary-color,5);
+      box-shadow: $nav-toggler-hover-box-shadow;
+    }
+  }
+
+  .nav-toggler-icon:before {
+    content: "\f0c9";
+  }
+
+  .nav-title {
+    margin: 0;
+    padding: 10px;
+    color: $base-color;
+    background-color: $primary-color;
+    font-size: 1rem;
+  }
+
+  .nav-menu {
+    padding: 0 25px;
+    list-style: none;
+  }
+
+  .nav-menu-item {
+    margin: .3rem;
+    font-size: .9rem;
+  }
+
+  .nav-menu-item-marker {
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border: 5px solid;
+    border-radius: 50%;
+  }
+
+  &.nav-opened {
+    max-width: $nav-opened-max-width;
+
+    .nav-content {
+      opacity: 1;
+    }
+
+    .nav-toggler {
+      background-color: $contrast-color;
+      box-shadow: $nav-box-shadow;
+
+      &:hover {
+        background-color: lighten($contrast-color,20);
+        box-shadow: $nav-toggler-hover-box-shadow;
+      }
+    }
+
+    .nav-toggler-icon:before {
+      content: "\f00d";
+    }
+  }
+}
